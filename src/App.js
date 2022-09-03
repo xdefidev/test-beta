@@ -120,7 +120,7 @@ export default function App() {
             params: [networkParams[toHex(network)]]
           });
           const chainId = await web3.eth.getChainId();
-          setChainId(chainId);
+//           setChainId(chainId);
           console.log(`switched to ${chainId}`);
         } catch (error) {
           console.log(error);
