@@ -119,12 +119,11 @@ export default function App() {
             method: "wallet_addEthereumChain",
             params: [networkParams[toHex(network)]]
           });
+          const chainId = await web3.eth.getChainId();
+          setChainId(chainId);
+          console.log(`switched to ${chainId}`);
         } catch (error) {
           console.log(error);
-        } finally {
-          const chainId = await web3.eth.getChainId();
-          console.log(`switched to ${chainId}`);
-          setChainId(chainId);
         }
       }
     }
