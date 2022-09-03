@@ -114,7 +114,7 @@ export default function App() {
       const web3 = new Web3(provider);
       const chainId = await web3.eth.getChainId();
       console.log(`switched to ${chainId}`);
-      // setChainId(chainId);
+      setChainId(chainId);
     } catch (switchError) {
       if (switchError.code === 4902) {
         try {
