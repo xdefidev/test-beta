@@ -4,7 +4,7 @@ import Web3 from "web3";
 import Web3Modal from "web3modal";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
-import { networkParams } from "./networks";
+import networkParams from "./networks";
 import { providerOptions } from "./providerOptions";
 import { toHex, hexToNumber } from "./utils";
 
